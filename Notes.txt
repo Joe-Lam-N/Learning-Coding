@@ -3,6 +3,9 @@ Author Block:
 
 Goals:
 	" I want to set up my github page with this. Github will record what I learn, when I learnt it, and how much I have mastered it".
+Recorded dates:
+	"Start: 4/23/23 
+	End: 4/24/23"
 
 Video Resoruce
 	"https://www.youtube.com/watch?v=tRZGeaHPoaw&ab_channel=KevinStratvert"
