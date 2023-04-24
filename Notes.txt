@@ -1,5 +1,8 @@
 Author Block:
-	" I am currently learning about git and github from a video tutorial. Planning to set up my learning progress github page using this"
+	" I am currently learning about git and github from a video tutorial. This would mark the start of my recoreded coding learning jornery. I have learn things prior to 	this but this would be where I start"
+
+Goals:
+	" I want to set up my github page with this. Github will record what I learn, when I learnt it, and how much I have mastered it".
 
 Video Resoruce
 	"https://www.youtube.com/watch?v=tRZGeaHPoaw&ab_channel=KevinStratvert"
@@ -71,7 +74,66 @@ renameing a file
 Reviewing the commits
 	"git log"
 		- see author, dates, and comment when commiting.
+	"git log -p"
+		- see more info when commiting with a side by side of old vs new.
+	"git help log"
+		- find all the diffrents ways to track down a change in a commit
 Changing a comment from a commit
 	"git commit --amend"
 		-this will pull you into vim and lets you edit any comment.
-21:00 end
+Jumping back a commit
+	"git reset <code value>"
+		- when you need to turn back into an old commit
+		- code value can be found with log
+Making a branch
+	"git branch <branch name>"
+		- create a copy of main
+	"git branch"
+		- see all the branches and what branch you are in
+	"git switch <branch name>"
+		- move from one branch to another
+	"git merge -m <comment> <branch to merge to main>"
+		- combaineing branches
+	"git branch -d <branch name>"
+		- delete a branch
+	-Merge conflict
+		- when main changes while working on branch and we are trying to merge
+		- when this happens you will be moved to a branch that is a mix of main and the branch you are trying to merge
+			- you now have to edit what you want to keep and what you want to change in file exploer
+				- will show "<<<<<<<<<head" to say what is in main and another ========= to show what you are trying to merge
+					- you would delete what you don't want in the new merged main branch
+						- after you are done just commit the mixed branch and you will move back to main
+===============================================================================================================================================
+All above is git and now we are going some things over github
+
+Github is a cloud git envierment. It is a social coding media where people can work together.
+
+-Create cloud repository
+	- push a existing repoitory to cloud
+		- "git remote add origin <your own url"will be given in github">"
+		- git branch -M main
+		- git push -u origin main
+			- these set of commands will connect your local repository to the github cloud 
+			- copy main
+			- then push it into the cloud
+		- git push --all
+			- push all branches in local repository to github cloud
+	- "git pull"
+		- will copy what has been done to the cloud repository to the local reporitory
+Things you can do in github
+	- See all commited files
+	- See last changes made to these files
+	- See branches of the repository
+	- Add files
+	- edit files
+	- commit
+		- Pull request
+			- able to make a people comfirm and check before commiting.
+			- connect it to a issue 
+	- issues tab
+		- create message box for feature reqesut or bugs in the code
+			- able to commit and use issue as the comment
+			- able to ask a specific person to tend to the problem
+	- Release
+		- let people download the soruce code for it
+	
