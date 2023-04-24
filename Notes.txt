@@ -1,0 +1,77 @@
+Author Block:
+	" I am currently learning about git and github from a video tutorial. Planning to set up my learning progress github page using this"
+
+Video Resoruce
+	"https://www.youtube.com/watch?v=tRZGeaHPoaw&ab_channel=KevinStratvert"
+
+
+What is git?
+	Git is used for tracking changes in files, usually used for working together among programmers collectively.
+Installing git
+	I used choco to install git with "choco install git.install"
+Global configs
+	"git config --global user.name "Joe Lam""
+		This makes is so when you make changes people can see who made it
+	"git config --global user.email jnl.joe.lam.@gmail.com"
+		This will also do the same as above but with email
+	"git config --global init.default branch main"
+		This will set the default branch to main
+Git help
+	If you need help with a command, you can do.
+		- git help "command"
+			this will open an offline manual page.
+Creating a git
+	"Git init"
+		This will create a git repository inside your current directory
+Status of git
+	"Git status"
+		This will show the status of git which shows uncommit files, untracked files, unstaged files and etc.
+
+Structure of files in git
+	Working files
+		- files are being worked on and changing
+	staging
+		- files are being held until you are ready to save
+	commit
+		- files are being saved on the repository/ a snapshot of your repository of staging.
+tracking files to git
+	"git add <file name>"
+		Will add the file into git repository for git to track 
+	"git add --all", "git add -A", "Git add ."
+		-This is the diffrents ways we can add all of the files to be in the repository.
+removeing files to track to git
+	"git rm --cached <file name>
+		-Remove file from the git repository to be tracked.
+Ignoreing file to track from git
+	-create a file name ".gitignore"
+		- Here you can list the file type for hit to ignore
+		- You can find a list of files type here
+			"https://github.com/github/gitignore"
+		- Use cases of keeping temp files from being stored.
+Commiting git
+	"Git commit -m <comment for commit>"
+		- This will save the current snapshot of the repository 
+		- it will also only save things that are in staging
+	"git diff"
+		- this can be used when a file has been modified after commit 
+		- it will show the chanegs that has been made
+	"git restore --staged index.htm"
+		- This is a command when you want to unstage something and put it back into working files
+
+	"git commit -a -m <comment for commit>"
+		- using this command we can skip the whole staging step and go from working files to commited
+
+	"git rm "file name""
+		- deleted a file
+	"git restore "file name""
+		- restore a deleted file.
+		- only works on files that were moved inside working files to tracked
+renameing a file
+	"git mv <old name> <new name>"
+Reviewing the commits
+	"git log"
+		- see author, dates, and comment when commiting.
+Changing a comment from a commit
+	"git commit --amend"
+		-this will pull you into vim and lets you edit any comment.
+21:00 end
